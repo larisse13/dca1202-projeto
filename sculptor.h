@@ -1,7 +1,7 @@
 #ifndef SCULPTOR_H
 #define SCULPTOR_H
-
 #include <iostream>
+
 using namespace std;
 
 struct Voxel {
@@ -11,13 +11,12 @@ struct Voxel {
   bool isOn; // Included or not
 };
 
-
 class Sculptor {
 protected:
   Voxel ***v;
   // 3D matrix
   int nx,ny,nz; // Dimensions
-  float red,green,blue,a; // Current drawing color
+  float rc,gc,bc,ac; // Current drawing color
 public:
   Sculptor(int _nx, int _ny, int _nz);
   ~Sculptor();
